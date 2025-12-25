@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>To-do List</title>
+	<link rel="stylesheet" href="styles/style.css" type="text/css" media="all" />
+</head>
+<body>
+	<div class="container">
+		<div id="todo-app">
+			<h1>Lista de Tarefas</h1>
+			<div class="stat-container">
+				<div class="details">
+					<h3>Mantém</h3>
+					<div id="progress-bar">
+						<div id="progress"></div>
+					</div>
+				</div>
+				<div class="stats-number">
+					<div id="numbers">0 / 0</div>
+				</div>
+			</div>
+			<form id="input-area">
+				<input type="text" id="task-input" placeholder="Adicionar uma nova tarefa..." />
+				<button type="submit" id="add-task-button">
+					<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><path fill="currentColor" d="M24 38q-.65 0-1.075-.425-.425-.425-.425-1.075v-11h-11q-.65 0-1.075-.425Q10 24.65 10 24q0-.65.425-1.075.425-.425 1.075-.425h11v-11q0-.65.425-1.075Q23.35 10 24 10q.65 0 1.075.425.425.425.425 1.075v11h11q.65 0 1.075.425Q38 23.35 38 24q0 .65-.425 1.075-.425.425-1.075.425h-11v11q0 .65-.425 1.075Q24.65 38 24 38Z"/></svg>
+				</button>
+			</form>
+			<div class="todos-container">
+				<ul id="task-list"></ul>
+				<img class="empty-image" src="images/empty.svg" alt="Vazio" />
+			</div>
+		</div>
+	</div>
+	<script src="scripts/script.js"></script>
+</body>
+</html>
