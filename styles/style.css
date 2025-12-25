@@ -153,7 +153,6 @@ body {
 	font-size: 1.2rem;
 	position: relative;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	background-color: rgba(155, 194, 203, 0.3);
 	color: #FFFFFF;
@@ -162,9 +161,12 @@ body {
 }
 
 #task-list li span {
-	margin-left: 10px;
-	flex: 1;
-	word-wrap: break-word;
+  margin-right: 10px;
+  display: inline-block;
+  flex: 1 1 auto;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 #task-list li.completed span {
@@ -177,6 +179,8 @@ body {
 }
 
 #task-list li .checkbox {
+	margin-right: 10px;
+	flex-shrink: 0;
 	min-width: 20px;
 	height: 20px;
 	border: 2px solid rgba(155, 194, 203, 0.3);
@@ -205,9 +209,10 @@ body {
 }
 
 .task-buttons {
-	display: flex;
-	gap: 10px;
 	margin-right: auto;
+	display: flex;
+	flex-shrink: 0;
+	gap: 5px;
 }
 
 .task-buttons button {
