@@ -206,10 +206,6 @@ body {
 	color: #FFFFFF;
 }
 
-#task-list li span {
-	flex: 1;
-}
-
 .task-buttons {
 	margin-right: auto;
 	display: flex;
