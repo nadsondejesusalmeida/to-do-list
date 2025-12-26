@@ -76,7 +76,7 @@ body {
 #progress {
 	width: 0%;
 	height: 100%;
-	background-color: #FF6F91;
+	background-color: #DA373C;
 	border-radius: 20px;
 	transition: width 0.3s ease;
 }
@@ -89,7 +89,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #FF6F91;
+	background-color: #DA373C;
 	border: 2px solid rgba(155, 194, 203, 0.3);
 	border-radius: 50%;
 }
@@ -132,7 +132,7 @@ body {
 }
 
 #input-area button:hover {
-	background-color: #FF6F91;
+	background-color: #DA373C;
 	transform: scale(1.1);
 }
 
@@ -191,12 +191,14 @@ body {
 }
 
 #task-list li .checkbox:checked {
-	background-color: #FF6F91;
+	background-color: #DA373C;
 	transform: scale(1.1);
 }
 
 #task-list li .checkbox:checked::before {
 	content: '\2713';
+	width: 100%;
+	height: 100%;
 	font-size: 1rem;
 	display: flex;
 	justify-content: center;
@@ -239,7 +241,7 @@ body {
 }
 
 .task-buttons .delete-button {
-	background-color: #FF6F91;
+	background-color: #DA373C;
 }
 
 .empty-image {
