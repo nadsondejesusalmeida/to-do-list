@@ -13,7 +13,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: url('../images/background.jpg') no-repeat center center / cover;
+	background: url('./images/background.jpg') no-repeat center center / cover;
 }
 
 .container {
@@ -108,12 +108,17 @@ body {
 	flex: 1;
 	background-color: rgba(155, 194, 203, 0.3);
 	color: #DBDBDB;
-	border: none;
+	border: 2px solid transparent;
 	border-radius: 22px;
+	transition: border 0.3s ease-in-out;
 }
 
 #input-area input::placeholder {
-	color: #BCBCBC;
+	color: #EDEDED;
+}
+
+#input-area input:focus-within {
+	border-color: rgba(255, 255, 255, 0.18);
 }
 
 #input-area button {
